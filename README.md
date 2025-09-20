@@ -2,6 +2,8 @@
 
 A modern, minimalistic portfolio built with Next.js and Tailwind CSS.
 
+**Live Demo:** [roshinjimmy.vercel.app](https://roshinjimmy.vercel.app/)
+
 ## Features
 
 - Responsive design

@@ -83,7 +83,7 @@ export const education: Education[] = [
     graduationDate: "2021",
     gpa: "95.8%",
     honors: [],
-    relevantCourses: ["Mathematics", "Physics", "Chemistry", "Computer Science"]
+    relevantCourses: ["Mathematics", "Physics", "Chemistry"]
   },
   {
     id: "3",
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     description: "Built a full-stack tool with live color correction for color-blind users, including a browser extension. Features real-time color adjustment and accessibility enhancements.",
     technologies: ["JavaScript", "React", "Python", "FastAPI", "OpenCV"],
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/roshinjimmy/Vision",
     featured: true
   },
   {
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     description: "Automated subjective answer grading system using ML & NLP. Extracts handwritten text and evaluates semantic similarity for accurate assessment.",
     technologies: ["Google Vision API", "SBERT", "PyTorch", "OpenCV", "AWS"],
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/roshinjimmy/answerly",
     featured: true
   },
   {
@@ -142,21 +142,21 @@ export const certifications: Certification[] = [
     name: "Introduction to Machine Learning",
     issuer: "NPTEL",
     date: "2024",
-    credentialUrl: ""
+    credentialUrl: "https://drive.google.com/file/d/1HGkpaXZWf_isBUhB-x12HecFW-YMWR6s/view"
   },
   {
     id: "2",
     name: "Postman API Fundamentals Student Expert",
     issuer: "Postman",
     date: "2024",
-    credentialUrl: ""
+    credentialUrl: "https://api.badgr.io/public/assertions/bysZF0jsTjyRfIzSmgk8xg"
   },
   {
     id: "3",
     name: "Programming in Python",
     issuer: "University of Michigan (Coursera)",
     date: "2023",
-    credentialUrl: ""
+    credentialUrl: "https://coursera.org/share/f41b70edfc3d583911a8634deaeb3a46"
   }
 ];
 

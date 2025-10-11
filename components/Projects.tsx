@@ -20,7 +20,7 @@ const Projects = () => {
               key={project.id}
               className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 relative overflow-hidden">
                 {project.imageUrl ? (
                   <img
                     src={project.imageUrl}

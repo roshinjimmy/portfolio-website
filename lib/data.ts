@@ -18,17 +18,19 @@ export const skills: Skill[] = [
   { name: "CSS", category: "Frontend", level: "Advanced" },
   { name: "JavaScript", category: "Frontend", level: "Advanced" },
   { name: "React.js", category: "Frontend", level: "Advanced" },
+  { name: "Next.js", category: "Frontend", level: "Advanced" },
   { name: "Node.js", category: "Backend", level: "Advanced" },
   { name: "Express.js", category: "Backend", level: "Intermediate" },
   { name: "MongoDB", category: "Database", level: "Intermediate" },
+  { name: "Supabase", category: "Database", level: "Intermediate" },
   { name: "Python", category: "Programming", level: "Advanced" },
   { name: "C++", category: "Programming", level: "Intermediate" },
   { name: "Java", category: "Programming", level: "Intermediate" },
   { name: "FastAPI", category: "Backend", level: "Intermediate" },
   { name: "OpenCV", category: "Machine Learning", level: "Intermediate" },
   { name: "PyTorch", category: "Machine Learning", level: "Intermediate" },
-  { name: "AWS", category: "Cloud", level: "Beginner" },
-  { name: "Git", category: "Tools", level: "Advanced" },
+  { name: "TensorFlow", category: "Machine Learning", level: "Intermediate" },
+  { name: "Git", category: "Tools", level: "Advanced" }
 ];
 
 export const experiences: Experience[] = [
@@ -101,35 +103,35 @@ export const projects: Project[] = [
   {
     id: "1",
     name: "Vision",
-    description: "Built a full-stack tool with live color correction for color-blind users, including a browser extension. Features real-time color adjustment and accessibility enhancements.",
-    technologies: ["JavaScript", "React", "Python", "FastAPI", "OpenCV"],
+    description: "Developed a web-based accessibility platform featuring real-time color correction for color-blind users and ML-powered cataract detection. Built a Chrome extension enabling seamless accessibility during daily browsing.",
+    technologies: ["Javascript", "Python", "FastAPI", "OpenCV", "Machine Learning"],
     liveUrl: "",
-    githubUrl: "https://github.com/roshinjimmy/Vision",
+    githubUrl: "https://github.com/roshinjimmy/vision",
     featured: true
   },
   {
     id: "2", 
-    name: "Answerly",
-    description: "Automated subjective answer grading system using ML & NLP. Extracts handwritten text and evaluates semantic similarity for accurate assessment.",
-    technologies: ["Google Vision API", "SBERT", "PyTorch", "OpenCV", "AWS"],
+    name: "AI Eval",
+    description: "Developed an automated grading system leveraging Google Vision API for OCR and SBERT/Gemini API for semantic analysis. Streamlined answer sheet evaluation with high accuracy in semantic similarity scoring.",
+    technologies: ["Next.js", "Python", "FastAPI","SBERT", "Supabase"],
     liveUrl: "",
-    githubUrl: "https://github.com/roshinjimmy/answerly",
+    githubUrl: "https://github.com/roshinjimmy/ai-eval",
     featured: true
   },
   {
     id: "3",
     name: "EchoFrame", 
-    description: "Developed AI-powered smart glasses for visually impaired individuals. Features on-device image capture with real-time audio feedback for enhanced navigation.",
-    technologies: ["XIAO ESP32S3", "YOLO", "OpenCV", "Pyttsx3"],
+    description: "Implemented an automated grading system leveraging Google Vision API for OCR and SBERT/Gemini API for semantic analysis, which streamlined answer sheet evaluation with high accuracy in semantic similarity scoring.",
+    technologies: ["Python", "TensorFlow Lite","OpenCV", "Pyttsx3"],
     liveUrl: "",
-    githubUrl: "https://github.com/roshinjimmy/quad_squad",
+    githubUrl: "https://github.com/roshinjimmy/echo-frame",
     featured: true
   },
   {
     id: "4",
     name: "Mic Bot",
-    description: "Developed an offline voice-controlled assistant using speech-to-text & fuzzy matching for system commands. Provides hands-free computer control.",
-    technologies: ["Python", "Vosk", "RapidFuzz", "Subprocess"],
+    description: "Built an offline voice-controlled system automation tool using Vosk speech recognition and fuzzy matching algorithms. Implemented configurable command execution ensuring complete privacy with zero cloud dependency.",
+    technologies: ["Python", "Vosk", "RapidFuzz", "PortAudio"],
     liveUrl: "",
     githubUrl: "https://github.com/roshinjimmy/mic-bot",
     featured: true

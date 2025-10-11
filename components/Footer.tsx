@@ -102,7 +102,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} {personalInfo.name}. Built with Next.js and Tailwind CSS.
+            © {currentYear} {personalInfo.name}
           </p>
         </div>
       </div>

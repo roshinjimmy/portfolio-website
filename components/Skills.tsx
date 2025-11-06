@@ -22,27 +22,18 @@ const Skills = () => {
   };
 
   const getCategoryBorderColor = (category: string): string => {
-    const colors = {
-      'Frontend': 'border-blue-200 dark:border-blue-800',
-      'Backend': 'border-green-200 dark:border-green-800',
-      'Database': 'border-purple-200 dark:border-purple-800',
-      'Programming': 'border-orange-200 dark:border-orange-800',
-      'Machine Learning': 'border-pink-200 dark:border-pink-800',
-      'Cloud': 'border-indigo-200 dark:border-indigo-800',
-      'Tools': 'border-gray-200 dark:border-gray-800',
-      'Other': 'border-yellow-200 dark:border-yellow-800'
-    };
-    return colors[category as keyof typeof colors] || 'border-gray-200 dark:border-gray-800';
+    // Using softer borders for better accessibility
+    return 'border-[#1a1a1a]/20 dark:border-[#e5e5e5]/20';
   };
 
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-900">
+    <section id="skills" className="py-20 bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             Skills & Technologies
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             Here's my technical toolkit for building innovative solutions
           </p>
         </div>
@@ -52,11 +43,11 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div 
               key={category} 
-              className={`bg-white dark:bg-gray-800 rounded-xl p-6 border-2 ${getCategoryBorderColor(category)} hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
+              className={`group bg-[#fafafa] dark:bg-[#1a1a1a] rounded-xl p-6 border ${getCategoryBorderColor(category)} hover:border-[#1a1a1a]/30 dark:hover:border-[#e5e5e5]/30 transition-all duration-300`}
             >
-              <div className="text-center mb-4">
-                <div className="text-3xl mb-2">{getCategoryIcon(category)}</div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <div className="text-center mb-5">
+                <div className="text-3xl mb-3">{getCategoryIcon(category)}</div>
+                <h3 className="text-xl font-semibold text-[#1a1a1a] dark:text-[#e5e5e5]">
                   {category}
                 </h3>
               </div>
@@ -65,7 +56,7 @@ const Skills = () => {
                 {getSkillsByCategory(category).map((skill) => (
                   <span
                     key={skill.name}
-                    className="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                    className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-sm font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10 hover:border-[#1a1a1a]/20 dark:hover:border-[#e5e5e5]/20 transition-colors"
                   >
                     {skill.name}
                   </span>

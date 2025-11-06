@@ -1,30 +1,43 @@
 "use client";
 
+import React, { useEffect, useState } from 'react';
 import { personalInfo } from '@/lib/data';
 
 const Hero = () => {
+  const [typedName, setTypedName] = useState('');
+
+  useEffect(() => {
+    const text = personalInfo.name;
+    let i = 0;
+    const timer = setInterval(() => {
+      i += 1;
+      setTypedName(text.slice(0, i));
+      if (i >= text.length) clearInterval(timer);
+    }, 90);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-700/70 to-indigo-800/70 flex items-center justify-center text-white text-4xl font-bold">
-              {personalInfo.name.split(' ').map(n => n[0]).join('')}
-            </div>
-          </div>
+          {/* Spacer to preserve layout after removing profile icon */}
+          <div aria-hidden="true" className="h-35 sm:h-30"></div>
+          {/* Removed profile icon for a cleaner hero */}
           
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-6">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-blue-700 to-indigo-800 bg-clip-text text-transparent">
-              {personalInfo.name}
+            <span className="text-[#1a1a1a] dark:text-[#e5e5e5] font-extrabold ml-2 sm:ml-3">
+              {typedName}
+              <span className="ml-1 inline-block w-0.5 h-[1em] bg-current align-middle caret-blink" aria-hidden="true"></span>
             </span>
           </h1>
           
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-8 font-medium">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#1a1a1a]/90 dark:text-[#e5e5e5]/90 mb-8 font-medium">
             Developer | Innovator | Student
           </h2>
           
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Passionate about crafting innovative digital solutions that make a difference. I specialize in full-stack development, 
             machine learning, and AI-powered applications. From building accessibility tools for color-blind users to developing 
             smart glasses for the visually impaired, I transform ideas into impactful technology.
@@ -33,14 +46,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gradient-to-r from-blue-700/80 to-indigo-800/80 text-white px-8 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-[#1a1a1a] dark:bg-[#e5e5e5] text-[#fafafa] dark:text-[#0f0f0f] px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
             >
               View My Work
             </button>
             
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-300"
+              className="border-2 border-[#1a1a1a] dark:border-[#e5e5e5] text-[#1a1a1a] dark:text-[#e5e5e5] px-8 py-3 rounded-lg font-medium hover:bg-[#1a1a1a] hover:text-[#fafafa] dark:hover:bg-[#e5e5e5] dark:hover:text-[#0f0f0f] transition-all duration-300"
             >
               Get In Touch
             </button>
@@ -51,7 +64,7 @@ const Hero = () => {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-[#1a1a1a] dark:text-[#e5e5e5] hover:opacity-70 transition-opacity"
               aria-label="GitHub"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -63,7 +76,7 @@ const Hero = () => {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-[#1a1a1a] dark:text-[#e5e5e5] hover:opacity-70 transition-opacity"
               aria-label="LinkedIn"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -73,7 +86,7 @@ const Hero = () => {
             
             <a
               href={`mailto:${personalInfo.email}`}
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-[#1a1a1a] dark:text-[#e5e5e5] hover:opacity-70 transition-opacity"
               aria-label="Email"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

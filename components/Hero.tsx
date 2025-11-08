@@ -37,7 +37,7 @@ const Hero = () => {
             Developer | Innovator | Student
           </h2>
           
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Passionate about crafting innovative digital solutions that make a difference. I specialize in full-stack development, 
             machine learning, and AI-powered applications. From building accessibility tools for color-blind users to developing 
             smart glasses for the visually impaired, I transform ideas into impactful technology.

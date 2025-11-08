@@ -5,10 +5,10 @@ const Education = () => {
     <section id="education" className="py-20 bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             Education & Certifications
           </h2>
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             My academic background and professional certifications that have shaped my expertise.
           </p>
         </div>
@@ -59,7 +59,7 @@ const Education = () => {
                         {edu.honors.map((honor, index) => (
                           <span
                             key={index}
-                            className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-sm font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
+                            className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-base font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
                           >
                             {honor}
                           </span>
@@ -77,7 +77,7 @@ const Education = () => {
                         {edu.relevantCourses.slice(0, 5).map((course, index) => (
                           <span
                             key={index}
-                            className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-sm font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
+                            className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-base font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
                           >
                             {course}
                           </span>

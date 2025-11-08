@@ -12,13 +12,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Personal Info */}
           <div>
-            <h3 className="text-3xl font-bold mb-4">{personalInfo.name}</h3>
-            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 mb-4 text-lg">Developer | Innovator | Student</p>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">{personalInfo.name}</h3>
+            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 mb-4 text-sm">Developer | Innovator | Student</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg sm:text-xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
                 { label: 'About', id: 'about' },
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Get In Touch</h4>
+            <h4 className="text-lg sm:text-xl font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-3">
               <div className="flex items-center text-base">
                 <svg className="w-4 h-4 mr-3 text-[#1a1a1a]/70 dark:text-[#e5e5e5]/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">

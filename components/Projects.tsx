@@ -5,10 +5,10 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             Featured Projects
           </h2>
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             A showcase of my recent work and personal projects that demonstrate my skills and passion for development.
           </p>
         </div>
@@ -47,7 +47,7 @@ const Projects = () => {
                   {project.name}
                 </h3>
                 
-                <p className="text-[#1a1a1a]/70 dark:text-[#e5e5e5]/70 mb-5 leading-relaxed text-base md:text-lg">
+                <p className="text-[#1a1a1a]/70 dark:text-[#e5e5e5]/70 mb-5 leading-relaxed text-base">
                   {project.description}
                 </p>
                 

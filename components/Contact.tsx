@@ -44,10 +44,10 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             I'm always open to new opportunities and interesting projects. Let's connect!
           </p>
         </div>
@@ -59,7 +59,7 @@ const Contact = () => {
               <h3 className="text-2xl sm:text-3xl font-semibold text-[#1a1a1a] dark:text-[#e5e5e5] mb-6">
                 Let's Start a Conversation
               </h3>
-              <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed mb-8">
+              <p className="text-base text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed mb-8">
                 Whether you have a project in mind, want to collaborate, or just want to say hello, 
                 I'd love to hear from you. Feel free to reach out through any of the channels below.
               </p>

@@ -6,10 +6,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* About Me Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             About Me
           </h2>
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             Get to know more about my background, interests, and what drives me as a developer.
           </p>
         </div>
@@ -21,14 +21,14 @@ const About = () => {
               Hello! I'm {personalInfo.name.split(' ')[0]}
             </h3>
             
-            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed text-xl">
+            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed text-lg">
               I'm a passionate {personalInfo.title.toLowerCase()} based in {personalInfo.location}. 
               I love creating digital experiences that make a difference in people's lives. 
               My journey in tech started with curiosity about how websites work, and it has evolved 
               into a deep passion for building scalable, user-friendly applications.
             </p>
             
-            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed text-xl">
+            <p className="text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 leading-relaxed text-lg">
               When I'm not coding, you can find me exploring new technologies, contributing to 
               open-source projects, or sharing my knowledge with the developer community. 
               I believe in continuous learning and staying up-to-date with the latest trends 
@@ -76,7 +76,7 @@ const About = () => {
                 {skills.map((skill) => (
                   <span
                     key={skill.name}
-                    className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-sm font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10 hover:border-[#1a1a1a]/20 dark:hover:border-[#e5e5e5]/20 transition-colors"
+                    className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-base font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10 hover:border-[#1a1a1a]/20 dark:hover:border-[#e5e5e5]/20 transition-colors"
                   >
                     {skill.name}
                   </span>

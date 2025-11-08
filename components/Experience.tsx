@@ -11,10 +11,10 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-[#fafafa] dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5] mb-4">
             Work Experience
           </h2>
-          <p className="text-xl text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 max-w-2xl mx-auto">
             My professional journey and the experiences that have shaped my skills.
           </p>
         </div>
@@ -38,7 +38,7 @@ const Experience = () => {
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
                   <div className="group bg-[#fafafa] dark:bg-[#1a1a1a] rounded-xl p-6 border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10 hover:border-[#1a1a1a]/30 dark:hover:border-[#e5e5e5]/30 transition-all duration-300">
                     <div className="flex flex-wrap items-center justify-between mb-4">
-                      <h3 className="text-2xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5]">
+                      <h3 className="text-xl sm:text-2xl font-bold text-[#1a1a1a] dark:text-[#e5e5e5]">
                         {experience.title}
                       </h3>
                       <span className="text-base text-[#1a1a1a]/70 dark:text-[#e5e5e5]/70 font-medium">
@@ -47,7 +47,7 @@ const Experience = () => {
                     </div>
                     
                     <div className="mb-5">
-                      <p className="text-xl font-semibold text-[#1a1a1a] dark:text-[#e5e5e5] mb-1">
+                      <p className="text-lg font-semibold text-[#1a1a1a] dark:text-[#e5e5e5] mb-1">
                         {experience.company}
                       </p>
                       <p className="text-base text-[#1a1a1a]/60 dark:text-[#e5e5e5]/60">
@@ -58,7 +58,7 @@ const Experience = () => {
                     <ul className="space-y-2.5 mb-6">
                       {experience.description.map((item, idx) => (
                         <li key={idx} className="flex items-start">
-                          <svg className="w-4 h-4 mt-1 mr-3 text-[#1a1a1a]/60 dark:text-[#e5e5e5]/60 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 mt-1 mr-3 text-[#1a1a1a]/60 dark:text-[#e5e5e5]/60 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span className="text-[#1a1a1a]/70 dark:text-[#e5e5e5]/70 text-base leading-relaxed">
@@ -72,7 +72,7 @@ const Experience = () => {
                       {experience.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-sm font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
+                          className="bg-[#1a1a1a]/5 dark:bg-[#e5e5e5]/10 text-[#1a1a1a]/80 dark:text-[#e5e5e5]/80 px-3 py-1.5 rounded-md text-base font-medium border border-[#1a1a1a]/10 dark:border-[#e5e5e5]/10"
                         >
                           {tech}
                         </span>

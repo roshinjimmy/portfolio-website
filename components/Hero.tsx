@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { personalInfo } from '@/lib/data';
+import Link from 'next/link';
 
 const Hero = () => {
   const [typedName, setTypedName] = useState('');
@@ -51,12 +52,11 @@ const Hero = () => {
               View My Work
             </button>
             
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-[#1a1a1a] dark:border-[#e5e5e5] text-[#1a1a1a] dark:text-[#e5e5e5] px-8 py-3 rounded-lg font-medium hover:bg-[#1a1a1a] hover:text-[#fafafa] dark:hover:bg-[#e5e5e5] dark:hover:text-[#0f0f0f] transition-all duration-300"
-            >
-              Get In Touch
+            <Link href="/resume">
+            <button className="border-2 border-[#1a1a1a] dark:border-[#e5e5e5] text-[#1a1a1a] dark:text-[#e5e5e5] px-8 py-3 rounded-lg font-medium hover:bg-[#1a1a1a] hover:text-[#fafafa] dark:hover:bg-[#e5e5e5] dark:hover:text-[#0f0f0f] transition-all duration-300">
+              Resume
             </button>
+            </Link>
           </div>
           
           <div className="flex justify-center space-x-6 mt-12">
